@@ -1,0 +1,564 @@
+<html>
+<head>
+<title>Table Example</title>
+<style>
+table {
+border-collapse: collapse;
+width: 100%;
+}
+th, td {
+border: 1px solid #ccc;
+padding: 8px;
+text-align: center;
+}
+th {
+background-color: #f0f0f0;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<th>id</th>
+<th>content</th>
+<th>keywords</th>
+<th>title</th>
+<th>category</th>
+<th>writer_code</th>
+<th>writer_name</th>
+<th>writer_email</th>
+</tr>
+
+<tr>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 1 %}
+        <li>{{ field[0] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 1 %}
+        <li>{{ field[1] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 1 %}
+        <li>{{ field[2] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 1 %}
+    <li>{{ field[3] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 1 %}
+    <li>{{ field[4] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 1 %}
+    <li>{{ field[5] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 1 %}
+    <li>{{ field[6] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 1 %}
+    <li>{{ field[7] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+</tr>
+<tr>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 2 %}
+        <li>{{ field[0] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 2 %}
+        <li>{{ field[1] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 2 %}
+        <li>{{ field[2] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 2 %}
+    <li>{{ field[3] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 2 %}
+    <li>{{ field[4] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 2 %}
+    <li>{{ field[5] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 2 %}
+    <li>{{ field[6] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 2 %}
+    <li>{{ field[7] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+</tr>
+<tr>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 3 %}
+        <li>{{ field[0] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 3 %}
+        <li>{{ field[1] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 3 %}
+        <li>{{ field[2] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 3 %}
+    <li>{{ field[3] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 3 %}
+    <li>{{ field[4] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 3 %}
+    <li>{{ field[5] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 3 %}
+    <li>{{ field[6] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 3 %}
+    <li>{{ field[7] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+</tr>
+<tr>
+    <td>
+        {% for field in data_table2 %}
+        {% if loop.index == 4 %}
+            <li>{{ field[0] }}</li></br>
+        {%endif%}    
+        {% endfor %}</td>
+    <td>{% for field in data_table2 %}
+        {% if loop.index == 4 %}
+            <li>{{ field[1] }}</li></br>
+        {%endif%}    
+        {% endfor %}</td>
+    <td>{% for field in data_table2 %}
+        {% if loop.index == 4 %}
+            <li>{{ field[2] }}</li></br>
+        {%endif%}    
+        {% endfor %}</td>
+    <td>
+        {% for field in data_table2 %}
+        {% if loop.index == 4 %}
+        <li>{{ field[3] }}</li></br>
+        {%endif%}    
+        {% endfor %}
+    </td>
+    <td>
+        {% for field in data_table2 %}
+        {% if loop.index == 4 %}
+        <li>{{ field[4] }}</li></br>
+        {%endif%}    
+        {% endfor %}
+    </td>
+    <td>
+        {% for field in data_table2 %}
+        {% if loop.index == 4 %}
+        <li>{{ field[5] }}</li></br>
+        {%endif%}     
+        {% endfor %}
+    </td>
+    <td>
+        {% for field in data_table2 %}
+        {% if loop.index == 4 %}
+        <li>{{ field[6] }}</li></br>
+        {%endif%}    
+        {% endfor %}
+    </td>
+    <td>
+        {% for field in data_table2 %}
+        {% if loop.index == 4 %}
+        <li>{{ field[7] }}</li></br>
+        {%endif%}    
+        {% endfor %}
+    </td>
+    </tr>
+    <tr>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 5 %}
+        <li>{{ field[0] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 5 %}
+        <li>{{ field[1] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 5 %}
+        <li>{{ field[2] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 5 %}
+    <li>{{ field[3] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 5 %}
+    <li>{{ field[4] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 5 %}
+    <li>{{ field[5] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 5 %}
+    <li>{{ field[6] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 5 %}
+    <li>{{ field[7] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+</tr>
+<tr>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 6 %}
+        <li>{{ field[0] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 6 %}
+        <li>{{ field[1] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 6 %}
+        <li>{{ field[2] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 6 %}
+    <li>{{ field[3] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 6 %}
+    <li>{{ field[4] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 6 %}
+    <li>{{ field[5] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 6 %}
+    <li>{{ field[6] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 6 %}
+    <li>{{ field[7] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+</tr>
+<tr>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 7 %}
+        <li>{{ field[0] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 7 %}
+        <li>{{ field[1] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 7 %}
+        <li>{{ field[2] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 7 %}
+    <li>{{ field[3] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 7 %}
+    <li>{{ field[4] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 7 %}
+    <li>{{ field[5] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 7 %}
+    <li>{{ field[6] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 7 %}
+    <li>{{ field[7] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+</tr>
+<tr>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 8 %}
+        <li>{{ field[0] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 8 %}
+        <li>{{ field[1] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 8 %}
+        <li>{{ field[2] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 8 %}
+    <li>{{ field[3] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 8 %}
+    <li>{{ field[4] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 8 %}
+    <li>{{ field[5] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 8 %}
+    <li>{{ field[6] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 8 %}
+    <li>{{ field[7] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+</tr>
+<tr>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 9 %}
+        <li>{{ field[0] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 9 %}
+        <li>{{ field[1] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 9 %}
+        <li>{{ field[2] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 9 %}
+    <li>{{ field[3] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 9 %}
+    <li>{{ field[4] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 9 %}
+    <li>{{ field[5] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 9 %}
+    <li>{{ field[6] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 9 %}
+    <li>{{ field[7] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+</tr>
+<tr>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 10 %}
+        <li>{{ field[0] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 10 %}
+        <li>{{ field[1] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>{% for field in data_table2 %}
+    {% if loop.index == 10 %}
+        <li>{{ field[2] }}</li></br>
+    {%endif%}    
+    {% endfor %}</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 10 %}
+    <li>{{ field[3] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 10 %}
+    <li>{{ field[4] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 10 %}
+    <li>{{ field[5] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 10 %}
+    <li>{{ field[6] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+<td>
+    {% for field in data_table2 %}
+    {% if loop.index == 10 %}
+    <li>{{ field[7] }}</li></br>
+    {%endif%}    
+    {% endfor %}
+</td>
+</tr>
+</table>
+</body>
+</html>

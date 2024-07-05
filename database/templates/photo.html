@@ -1,0 +1,256 @@
+<html>
+<head>
+<title>Photo Gallery HTML Template</title>
+<style>
+
+.image {
+        text-align: center;
+        border: 20px solid #ccc;
+        padding: 5px;
+        transition: transform 0.3s;
+        width: 400px; 
+        height: auto
+    }
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .image:hover {
+        transform: scale(1.2);
+    }
+
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+padding: 20px;
+}
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+grid-gap: 320px;
+}
+.image {
+text-align: center;
+border: 20px solid #ccc;
+padding: 5px;
+transition: transform 0.3s;
+}
+.image:hover {
+transform: scale(1.2);
+}
+img {
+max-width: 100%;
+height: auto;
+}
+</style>
+</head>
+<body>
+    <select id="categorySelector" onchange="filterImages()">
+        <option value="all">All Categories</option>
+        <option value="nature">Nature</option>
+        <option value="travel">Travel</option>
+        <option value="urbun">urbun</option>
+        <option value="seasonal">seasonal</option>
+        
+    </select>
+<div class="gallery">
+<div class="image" data-category="travel">
+<img src="https://images.creativemarket.com/0.1.0/ps/8055824/1820/1668/m1/fpnw/wm1/uuzzvolsmy6olrtfnkl5nontonziyukaxgji4uylz7fcgblx63u72dwbcnbeh5cd-.jpg?1585755398&s=c0ccbe5ce495e64941a43ebb9af2968b" alt="Image 1">
+<ul>
+    {% for user in data_table1 %}
+    {% if loop.index ==  1 %}
+        <li><b>id:</b>{{ user[0] }}</li></br>
+        <li><b>title:</b>{{ user[1] }}</li></br>
+        <li><b>tag:</b>{{ user[2] }}</li></br>
+        <li><b>description:</b>{{ user[3] }}</li></br>
+        <li><b>category:</b>{{ user[4] }}</li></br>
+        <li><b>photographer_code:</b>{{ user[5] }}</li></br>
+        <li><b>photographer_name:</b>{{ user[6] }}</li></br>
+        <li><b>p_mail:</b>{{ user[7] }}</li></br>
+
+    {%endif%}    
+    {% endfor %}
+</ul>
+</div>
+<div class="image" data-category="nature">
+<img src="https://th.bing.com/th/id/R.af76dfafd654df3995fac1e71de4c55c?rik=rI2Tz9nG5fCSMA&riu=http%3a%2f%2fwww.hdwallpapers.in%2fdownload%2fbrooks_mountain_range_alaska-1600x1200.jpg&ehk=KolN7Gv%2bqLkUD52AYN8k4u1iBNnphtlkbgUfWyFzIeo%3d&risl=&pid=ImgRaw&r=0" alt="Image 2">
+<ul>
+    {% for user in data_table1 %}
+    {% if loop.index == 2 %}
+        <li><b>id:</b>{{ user[0] }}</li></br>
+        <li><b>title:</b>{{ user[1] }}</li></br>
+        <li><b>tag:</b>{{ user[2] }}</li></br>
+        <li><b>description:</b>{{ user[3] }}</li></br>
+        <li><b>category:</b>{{ user[4] }}</li></br>
+        <li><b>photographer_code:</b>{{ user[5] }}</li></br>
+        <li><b>photographer_name:</b>{{ user[6] }}</li></br>
+        <li><b>p_mail:</b>{{ user[7] }}</li></br>
+
+    {%endif%}    
+    {% endfor %}
+</ul>
+</div>
+<div class="image" data-category="urbun">
+<img src="https://th.bing.com/th/id/OIP.d1T6IyZ3crrDOZGjn-na5wHaEK?pid=ImgDetMain" alt="Image 3">
+<ul>
+    {% for user in data_table1 %}
+    {% if loop.index == 3 %}
+        <li><b>id:</b>{{ user[0] }}</li></br>
+        <li><b>title:</b>{{ user[1] }}</li></br>
+        <li><b>tag:</b>{{ user[2] }}</li></br>
+        <li><b>description:</b>{{ user[3] }}</li></br>
+        <li><b>category:</b>{{ user[4] }}</li></br>
+        <li><b>photographer_code:</b>{{ user[5] }}</li></br>
+        <li><b>photographer_name:</b>{{ user[6] }}</li></br>
+        <li><b>p_mail:</b>{{ user[7] }}</li></br>
+
+    {%endif%}    
+    {% endfor %}
+</ul>
+</div>
+<div class="image" data-category="nature">
+<img src="https://th.bing.com/th/id/OIP.k1RgqDNLjhR0bGox1ZpBRwHaLI?pcl=1b1a19&pid=ImgDetMain" alt="Image 4">
+<ul>
+    {% for user in data_table1 %}
+    {% if loop.index == 4 %}
+        <li><b>id:</b>{{ user[0] }}</li></br>
+        <li><b>title:</b>{{ user[1] }}</li></br>
+        <li><b>tag:</b>{{ user[2] }}</li></br>
+        <li><b>description:</b>{{ user[3] }}</li></br>
+        <li><b>category:</b>{{ user[4] }}</li></br>
+        <li><b>photographer_code:</b>{{ user[5] }}</li></br>
+        <li><b>photographer_name:</b>{{ user[6] }}</li></br>
+        <li><b>p_mail:</b>{{ user[7] }}</li></br>
+
+    {%endif%}    
+    {% endfor %}
+</ul>
+</div>
+<div class="image" data-category="travel">
+    <img src="https://th.bing.com/th/id/OIP.oXdp4tnj4Vx90ZeAlOGgIgHaE8?pid=ImgDetMain" alt="Image 5">
+    <ul>
+        {% for user in data_table1 %}
+        {% if loop.index == 5 %}
+            <li><b>id:</b>{{ user[0] }}</li></br>
+            <li><b>title:</b>{{ user[1] }}</li></br>
+            <li><b>tag:</b>{{ user[2] }}</li></br>
+            <li><b>description:</b>{{ user[3] }}</li></br>
+            <li><b>category:</b>{{ user[4] }}</li></br>
+            <li><b>photographer_code:</b>{{ user[5] }}</li></br>
+            <li><b>photographer_name:</b>{{ user[6] }}</li></br>
+            <li><b>p_mail:</b>{{ user[7] }}</li></br>
+    
+        {%endif%}    
+        {% endfor %}
+    </ul>
+    </div>
+    <div class="image" data-category="nature">
+    <img src="https://th.bing.com/th/id/OIP.pG8CT-YSFDEQfCcmaQlsOgHaEo?pid=ImgDetMain" alt="Image 6">
+    <ul>
+        {% for user in data_table1 %}
+        {% if loop.index == 6 %}
+            <li><b>id:</b>{{ user[0] }}</li></br>
+            <li><b>title:</b>{{ user[1] }}</li></br>
+            <li><b>tag:</b>{{ user[2] }}</li></br>
+            <li><b>description:</b>{{ user[3] }}</li></br>
+            <li><b>category:</b>{{ user[4] }}</li></br>
+            <li><b>photographer_code:</b>{{ user[5] }}</li></br>
+            <li><b>photographer_name:</b>{{ user[6] }}</li></br>
+            <li><b>p_mail:</b>{{ user[7] }}</li></br>
+    
+        {%endif%}    
+        {% endfor %}
+    </ul>
+    </div>
+    <div class="image" data-category="nature">
+    <img src="https://th.bing.com/th/id/OIP.mIgBCMsvkxokTBsgM66z9QHaE8?pcl=1b1a19&pid=ImgDetMain" alt="Image7">
+    <ul>
+        {% for user in data_table1 %}
+        {% if loop.index == 7 %}
+            <li><b>id:</b>{{ user[0] }}</li></br>
+            <li><b>title:</b>{{ user[1] }}</li></br>
+            <li><b>tag:</b>{{ user[2] }}</li></br>
+            <li><b>description:</b>{{ user[3] }}</li></br>
+            <li><b>category:</b>{{ user[4] }}</li></br>
+            <li><b>photographer_code:</b>{{ user[5] }}</li></br>
+            <li><b>photographer_name:</b>{{ user[6] }}</li></br>
+            <li><b>p_mail:</b>{{ user[7] }}</li></br>
+    
+        {%endif%}    
+        {% endfor %}
+    </ul>
+    </div>
+    <div class="image" data-category="urbun">
+<img src="https://th.bing.com/th/id/R.f1f6c016c2a3ae638b8ef3bd44c55bac?rik=%2fbU4Bg1XYyM%2baQ&pid=ImgRaw&r=0" alt="Image 8">
+<ul>
+    {% for user in data_table1 %}
+    {% if loop.index == 8 %}
+        <li><b>id:</b>{{ user[0] }}</li></br>
+        <li><b>title:</b>{{ user[1] }}</li></br>
+        <li><b>tag:</b>{{ user[2] }}</li></br>
+        <li><b>description:</b>{{ user[3] }}</li></br>
+        <li><b>category:</b>{{ user[4] }}</li></br>
+        <li><b>photographer_code:</b>{{ user[5] }}</li></br>
+        <li><b>photographer_name:</b>{{ user[6] }}</li></br>
+        <li><b>p_mail:</b>{{ user[7] }}</li></br>
+
+    {%endif%}    
+    {% endfor %}
+</ul>
+</div>
+<div class="image" data-category="seasonal">
+<img src="https://th.bing.com/th/id/OIP.sBnH4Ywsy0xDYETeGEJbzwHaEo?pid=ImgDetMain" alt="Image 9">
+<ul>
+    {% for user in data_table1 %}
+    {% if loop.index == 9 %}
+        <li><b>id:</b>{{ user[0] }}</li></br>
+        <li><b>title:</b>{{ user[1] }}</li></br>
+        <li><b>tag:</b>{{ user[2] }}</li></br>
+        <li><b>description:</b>{{ user[3] }}</li></br>
+        <li><b>category:</b>{{ user[4] }}</li></br>
+        <li><b>photographer_code:</b>{{ user[5] }}</li></br>
+        <li><b>photographer_name:</b>{{ user[6] }}</li></br>
+        <li><b>p_mail:</b>{{ user[7] }}</li></br>
+
+    {%endif%}    
+    {% endfor %}
+</ul>
+</div>
+<div class="image" data-category="seasonal">
+<img src="https://th.bing.com/th/id/R.0617e1768137a95e7cb700af89605f67?rik=3MDcMF7IW%2bRXFw&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2fautumn-leaves-hd.jpg&ehk=erlie7MipcngRTSoUB3XOsC56vhVEdygHu0KtmY00Sc%3d&risl=&pid=ImgRaw&r=0" alt="Image 10">
+<ul>
+    {% for user in data_table1 %}
+    {% if loop.index == 10 %}
+        <li><b>id:</b>{{ user[0] }}</li></br>
+        <li><b>title:</b>{{ user[1] }}</li></br>
+        <li><b>tag:</b>{{ user[2] }}</li></br>
+        <li><b>description:</b>{{ user[3] }}</li></br>
+        <li><b>category:</b>{{ user[4] }}</li></br>
+        <li><b>photographer_code:</b>{{ user[5] }}</li></br>
+        <li><b>photographer_name:</b>{{ user[6] }}</li></br>
+        <li><b>p_mail:</b>{{ user[7] }}</li></br>
+
+    {%endif%}    
+    {% endfor %}
+</ul>
+</div>
+<script>
+    function filterImages() {
+        const category = document.getElementById("categorySelector").value;
+        const images = document.getElementsByClassName("image");
+        
+        for (let i = 0; i < images.length; i++) {
+            const image = images[i];
+            if (category === "all" || image.getAttribute("data-category") === category) {
+                image.style.display = "block";
+            } else {
+                image.style.display = "none";
+            }
+        }
+    }
+</script>
+
+
+</body>
+</html>
